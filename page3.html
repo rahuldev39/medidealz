@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+
+    <title>Dashboard :: Medidealz</title>
+
+    
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">    
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">        
+    <link href="css/chemist.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+    <link href="css/jquery.auto-complete.css" rel="stylesheet">
+
+
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+
+    <!--[if lt IE 9]>
+
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+
+    <![endif]-->
+
+
+
+  </head>
+
+
+
+<body>
+
+
+
+<nav class="navbar " role="navigation">
+
+
+
+	<div class="container">
+
+  <!-- Brand and toggle get grouped for better mobile display -->
+
+  <div class="navbar-header">
+
+    <button type="button" class="navbar-toggle toggle-btn" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+
+      <span class="sr-only">Toggle navigation</span>
+
+      <i class="fa fa-th-large" aria-hidden="true"></i>
+
+    </button>
+
+    <a class="navbar-brand" href="#"><img src="img/medidealz-logo-admin.png"></a>
+
+  </div>
+
+
+
+  <!-- Collect the nav links, forms, and other content for toggling -->
+
+  <div class="collapse navbar-collapse navbar-ex1-collapse">
+
+    <ul class="nav navbar-nav navbar-right">
+
+      <li class="dropdown">
+
+						
+
+			<a href="javscript:;" class="dropdown-toggle" data-toggle="dropdown">
+
+				<i class="fa fa-cog" aria-hidden="true"></i>
+
+				Settings
+
+				<b class="caret"></b>
+
+			</a>
+
+			
+
+			<ul class="dropdown-menu">
+
+				<li><a href="account.html">Account Settings</a></li>
+
+				<li><a href="javascript:;">Privacy Settings</a></li>
+
+				<li class="divider"></li>
+
+				<li><a href="javascript:;">Help</a></li>
+
+			</ul>
+
+			
+
+		</li>
+
+
+
+		<li class="dropdown">
+			<a href="javscript:;" class="dropdown-toggle" data-toggle="dropdown">
+
+				<i class="fa fa-user" aria-hidden="true"></i>
+
+				Rod Howard
+
+				<b class="caret"></b>
+
+			</a>
+			<ul class="dropdown-menu">
+				<li><a href="javascript:;">My Profile</a></li>
+
+				<li><a href="javascript:;">My Groups</a></li>
+
+				<li class="divider"></li>
+
+				<li><a href="javascript:;">Logout</a></li>
+
+			</ul>
+		</li>
+        
+        		<li class="dropdown">
+			<a href="javscript:;" class="dropdown-toggle" data-toggle="dropdown">
+
+				<i class="fa fa-bell" aria-hidden="true"></i>
+                  <span class="cart-count default-bg">8</span>
+
+
+			</a>
+			<ul class="dropdown-menu am-notifications" uib-dropdown-menu="" aria-labelledby="simple-dropdown">
+                            <li>
+                                <div class="title">Notifications<span class="badge">3</span></div>
+                                <div class="list">
+                      <div class="am-scroller has-scrollbar">
+                        <div class="content ">
+                          <ul>
+                            <li class="active"><a href="#">
+                                
+                                <div class="user-content"><span class="circle"></span><span class="name">Jessica Caruso</span><span class="text-content"> accepted your invitation to join the team.</span><span class="date">2 min ago</span></div></a></li>
+                            <li><a href="#">
+                                
+                                <div class="user-content"><span class="name">Joel King</span><span class="text-content"> is now following you</span><span class="date">2 days ago</span></div></a></li>
+                            <li><a href="#">
+                                
+                                <div class="user-content"><span class="name">Claire Sassu</span><span class="text-content"> is watching your main repository</span><span class="date">2 days ago</span></div></a></li>
+                                
+                                <li><a href="#">
+                                
+                                <div class="user-content"><span class="name">Claire Sassu</span><span class="text-content"> is watching your main repository</span><span class="date">2 days ago</span></div></a></li>
+                                
+                                <li><a href="#">
+                                
+                                <div class="user-content"><span class="name">Claire Sassu</span><span class="text-content"> is watching your main repository</span><span class="date">2 days ago</span></div></a></li>
+                            
+                          </ul>
+                        </div>
+                      <div class="nano-pane"><div class="nano-slider"></div></div></div>
+                    </div>
+                                <div class="notifi-footer"> <a href="#">View all notifications</a></div>
+                            </li>
+                        </ul>
+		</li>
+        
+        <!--<li class="dropdown">					
+
+						<a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown">
+
+							<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                            <span class="cart-count default-bg">8</span>
+
+						</a>	    
+
+						<ul class="dropdown-menu shopping-cart">
+							<li>
+                                  <table class="table table-hover">
+                                      <thead>
+                                          <tr>
+                                              <th class="quantity">QTY</th>
+                                              <th class="product">Product</th>
+                                              <th class="amount">Subtotal</th>
+                                          </tr>
+                                      </thead>
+                                      <tbody>
+                                          <tr>
+                                              <td class="quantity">2 x</td>
+                                              <td class="product"><a href="shop-product.html">Product Item 1</a></td>
+                                              <td class="amount">$199.00</td>
+                                          </tr>
+                                          <tr>
+                                              <td class="quantity">3 x</td>
+                                              <td class="product"><a href="shop-product.html">Product Item 2</a></td>
+                                              <td class="amount">$299.00</td>
+                                          </tr>
+                                          <tr>
+                                              <td class="quantity">3 x</td>
+                                              <td class="product"><a href="shop-product.html">Product Item 3</a></td>
+                                              <td class="amount">$1499.00</td>
+                                          </tr>
+                                          <tr>
+                                              <td class="total-quantity" colspan="2"><strong>Total 8 Items</strong></td>
+                                              <td class="total-amount">$1997.00</td>
+                                          </tr>
+                                      </tbody>
+                                  </table>
+                                  <div class="panel-body text-right">
+                                      <a href="#" class="btn btn-group btn-default btn-sm">View Cart</a>
+                                      <a href="#" class="btn btn-group btn-primary btn-sm">Checkout</a>
+                                  </div>
+                              </li>
+						</ul> 				
+
+					</li>-->
+
+    </ul>
+
+    
+
+    <form class="navbar-form navbar-right" role="search">
+
+      <div class="form-group">
+
+        <input type="text" class="form-control input-sm search-query" placeholder="Search">
+
+      </div>
+
+    </form>
+
+  </div><!-- /.navbar-collapse -->
+
+</div> <!-- /.container -->
+
+</nav>
+
+    
+
+
+
+
+
+
+
+    
+
+<div class="subnavbar">
+
+
+
+	<div class="subnavbar-inner">
+
+	
+
+		<div class="container">
+
+			
+
+			<a href="javascript:;" class="subnav-toggle" data-toggle="collapse" data-target=".subnav-collapse">
+
+		      <span class="sr-only">Toggle navigation</span>
+
+		      <i class="fa fa-bars" aria-hidden="true"></i>
+
+		      
+
+		    </a>
+
+
+
+			<div class="collapse subnav-collapse">
+
+				<ul class="mainnav">
+
+				
+
+					<li class="active">
+
+						<a href="#">
+
+							<i class="fa fa-home" aria-hidden="true"></i>
+
+							<span>Home</span>
+
+						</a>	    				
+
+					</li>
+
+					
+
+					<li class="dropdown">					
+
+						<a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown">
+
+							<i class="fa fa-users" aria-hidden="true"></i>
+
+							<span>Manage Vendors</span>
+
+							<b class="caret"></b>
+
+						</a>	    
+
+						<ul class="dropdown-menu">
+
+							<li><a href="#">Submenu Item</a></li>
+                            <li><a href="#">Submenu Item</a></li>
+                            <li><a href="#">Submenu Item</a></li>
+						</ul> 				
+
+					</li>
+
+					<li class="dropdown">					
+
+						<a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown">
+
+							<i class="fa fa-medkit" aria-hidden="true"></i>
+
+							<span>Manage Chemists</span>
+
+							<b class="caret"></b>
+
+						</a>	    
+
+						<ul class="dropdown-menu">
+
+							<li><a href="#">Submenu Item</a></li>
+                            <li><a href="#">Submenu Item</a></li>
+                            <li><a href="#">Submenu Item</a></li>
+
+						</ul> 				
+
+					</li>
+                    
+                    <li class="dropdown">					
+
+						<a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown">
+
+							<i class="fa fa-user" aria-hidden="true"></i>
+
+							<span>Manage User</span>
+
+							<b class="caret"></b>
+
+						</a>	    
+
+						<ul class="dropdown-menu">
+
+							<li><a href="#">Submenu Item</a></li>
+                            <li><a href="#">Submenu Item</a></li>
+                            <li><a href="#">Submenu Item</a></li>
+
+						</ul> 				
+
+					</li>
+                    
+                    <li class="dropdown">					
+
+						<a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown">
+
+							<i class="fa fa-shopping-basket" aria-hidden="true"></i>
+
+							<span>Cart</span>
+
+							<b class="caret"></b>
+
+						</a>	    
+
+						 				
+
+					</li>
+                    
+                    
+
+				</ul>
+
+			</div> <!-- /.subnav-collapse -->
+
+
+
+		</div> <!-- /container -->
+
+	
+
+	</div> <!-- /subnavbar-inner -->
+
+
+
+</div> <!-- /subnavbar -->
+
+    
+	<div class="breadcrumb-container">
+    	<div class="container">
+        	<div class="row">
+              <ol class="breadcrumb">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Library</a></li>
+              <li class="active">Data</li>
+            </ol>
+            </div>
+        </div>
+    </div>
+    
+
+<div class="main cart-main">
+    <div class="container">
+      <div class="row">  
+          <div class="col-md-5 center-block no-float">	
+			<div class="widget stacked ">
+				<div class="widget-header">
+
+					<i class="fa fa-list-ul" aria-hidden="true"></i>
+					<h3>Print Detail</h3>
+				</div> <!-- /widget-header -->
+
+				<div class="widget-content">
+
+					<div class="print-detail">
+						<div class="tag-box tag-box-v3 text-center">
+                        	<div class="big-box">
+                            	<div class="bigbox-inner"><h4>Order is ready to shipped</h4></div>
+                            </div>
+                        </div>
+                        
+                        <div class="well well-sm text-right">
+                        	<button class="btn btn-default"><i class="fa fa-print"></i> Print</button>
+                            <button class="btn btn-primary">Go to main Address <i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+                        </div>
+                        
+					</div>
+                
+				</div> <!-- /widget-content -->
+
+			</div> <!-- /widget -->
+
+	      </div>
+
+      </div> <!-- /row -->
+
+    </div> <!-- /container -->
+
+</div> <!-- /main -->
+
+ <!-- /extra -->
+
+
+<div class="footer">
+
+		
+
+	<div class="container">
+
+		
+
+		<div class="row">
+
+			
+
+			<div id="footer-copyright" class="col-md-6">
+
+				&copy; 2016-17 Medidealz.
+
+			</div> <!-- /span6 -->
+
+			
+
+
+			
+
+		</div> <!-- /row -->
+
+		
+
+	</div> <!-- /container -->
+
+	
+
+</div> <!-- /footer -->
+
+
+
+<!-- Le javascript
+
+================================================== -->
+
+<!-- Placed at the end of the document so the pages load faster -->
+
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+  </body>
+
+</html>
+

@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+  	
+<head>
+  		<meta charset="utf-8">
+    	<title>MediDealz-Admin</title>
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    	<meta name="description" content="">
+    	<meta name="author" content="">
+	    <!-- Bootstrap core CSS -->
+	    <link href="css/bootstrap.min.css" rel="stylesheet">
+		<!-- Font Awesome -->
+		<link href="css/font-awesome.min.css" rel="stylesheet">
+		<link href="css/vendor.css" rel="stylesheet">
+        <link href="css/custom.css" rel="stylesheet">
+       
+	
+  	</head>
+
+  	<body class="overflow-hidden">
+		<div class="wrapper preload">
+			<!-- sidebar-right -->
+			<header class="top-nav">
+				<div class="top-nav-inner">
+					<div class="nav-header">
+						<button type="button" class="navbar-toggle pull-left sidebar-toggle" id="sidebarToggleSM">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						
+						<ul class="nav-notification pull-right">
+							<li>
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-cog fa-lg"></i></a>
+								<span class="badge badge-danger bounceIn">1</span>
+								<ul class="dropdown-menu dropdown-sm pull-right">
+									<li class="user-avatar">
+										<img src="img/user.png" alt="" class="img-circle">
+										<div class="user-content">
+										  <h5 class="no-m-bottom">John Doe</h5>
+											<div class="m-top-xs">
+												<a href="#" class="m-right-sm">Profile</a>
+												<a href="#">Log out</a>
+											</div>
+										</div>
+									</li>	  
+									<li>
+										<a href="#">
+											Inbox
+											<span class="badge badge-danger bounceIn animation-delay2 pull-right">1</span>
+										</a>
+									</li>			  
+									<li>
+										<a href="#">
+											Notification
+											<span class="badge badge-purple bounceIn animation-delay3 pull-right">2</span>
+										</a>
+									</li>			  
+									<li>
+										<a href="#">
+											Message
+											<span class="badge badge-success bounceIn animation-delay4 pull-right">7</span>
+										</a>
+									</li>			  	  
+									<li class="divider"></li>
+									<li>
+										<a href="#">Setting</a>
+									</li>			  	  
+								</ul>
+							</li>
+						</ul>
+						
+						<a href="#" class="brand">
+							<img src="img/medidealz-logo.png">
+						</a>
+					</div>
+					<div class="nav-container">
+						<button type="button" class="navbar-toggle pull-left sidebar-toggle" id="sidebarToggleLG">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<ul class="nav-notification">	
+							<li class="search-list">
+								<div class="search-input-wrapper">
+									<div class="search-input">
+										<input type="text" class="form-control input-sm inline-block">
+										<a href="#" class="input-icon text-normal"><i class="fa fa-search"></i></a>
+									</div>
+								</div>
+							</li>
+						</ul>
+						<div class="pull-right m-right-sm">
+							<div class="user-block hidden-xs">
+								<a href="#" id="userToggle" data-toggle="dropdown">
+									<img src="img/user.png" alt="" class="img-circle inline-block user-profile-pic">
+									<div class="user-detail inline-block">
+										Jane Doe
+										<i class="fa fa-angle-down"></i>
+									</div>
+								</a>
+								<div class="panel border dropdown-menu user-panel dropdown-menu-left">
+									<div class="panel-body paddingTB-sm">
+										<ul>
+											<li>
+												<a href="#">
+													<i class="fa fa-edit fa-lg"></i><span class="m-left-xs">My Profile</span>
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													<i class="fa fa-inbox fa-lg"></i><span class="m-left-xs">Inboxes</span>
+													<span class="badge badge-danger bounceIn animation-delay3">2</span>
+												</a>
+											</li>
+											<li>
+												<a href="#">
+												<i class="fa fa-power-off fa-lg"></i><span class="m-left-xs">Sign out</span>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							
+						</div>
+					</div>
+				</div><!-- ./top-nav-inner -->	
+			</header>
+			<aside class="sidebar-menu fixed">
+				<div class="sidebar-inner scrollable-sidebar">
+					<div class="main-menu">
+						<ul class="accordion">
+							
+							<li class="">
+								<a href="#">
+									<span class="menu-content block">
+										
+										<span class="text m-left-sm">Dashboard</span>
+									</span>
+									<span class="menu-content-hover block">
+										Home
+									</span>
+								</a>
+							</li>
+                            
+                            <li class="active">
+								<a href="#">
+									<span class="menu-content block">
+										
+										<span class="text m-left-sm">Dashboard</span>
+									</span>
+									<span class="menu-content-hover block">
+										Home
+									</span>
+								</a>
+							</li>
+                            
+							<li class="openable">
+								<a href="#">
+									<span class="menu-content block">
+										
+										<span class="text m-left-sm">Manage Vendors</span>
+										<span class="submenu-icon"></span>
+									</span>
+									<span class="menu-content-hover block">
+										Form
+									</span>
+								</a>
+								<ul class="submenu bg-palette4">
+									<li class="active"><a href="#"><span class="submenu-label">Submenu Item</span></a></li>
+									<li><a href="#"><span class="submenu-label">Submenu Item</span></a></li>
+                                    <li><a href="#"><span class="submenu-label">Submenu Item</span></a></li>
+								</ul>
+							</li>
+                            
+							<li class="openable ">
+								<a href="#">
+									<span class="menu-content block">
+										
+										<span class="text m-left-sm">Manage Chemists</span>
+										<span class="submenu-icon"></span>
+									</span>
+									<span class="menu-content-hover block">
+										Form
+									</span>
+								</a>
+								<ul class="submenu bg-palette4">
+									<li><a href="#"><span class="submenu-label">Submenu Item</span></a></li>
+									<li><a href="#"><span class="submenu-label">Submenu Item</span></a></li>
+                                    <li><a href="#"><span class="submenu-label">Submenu Item</span></a></li>
+								</ul>
+							</li>
+							
+							
+							
+							<li class="menu-header">
+								Others
+							</li>
+							
+							
+						</ul>
+					</div>	
+					<div class="sidebar-fix-bottom clearfix">
+						<p>© Copyright 2016 <a href="#">MediDealz</a>. All Rights Reserved.</p>
+					</div>
+				</div><!-- sidebar-inner -->
+			</aside>
+			
+			<div class="main-container">
+				<div class="padding-md">
+					<ul class="breadcrumb">
+						<li><span class="primary-font"><i class="icon-home"></i></span><a href="#"> Home</a></li>
+						<li>Manage Vendors</li>	 
+						<li>Order List</li>	 
+					</ul>
+                    
+                    <div class="well well-sm text-right">
+                    	<button class="btn btn-primary" data-toggle="modal" data-target="#myModal">Invite</button>
+                    </div>
+
+					<table class="table table-striped" id="dataTable">
+						<thead>
+							<tr>
+								<th>User Name</th>
+								<th>Role</th>
+								<th width="100">Action</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Jone Doe</td>
+								<td>Vendor</td>
+								<td><div class="btn-group btn-group-xs">
+							  		<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+							    		Action <span class="caret"></span>
+							  		</button>
+							  		<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							    		<li><a href="#">Action</a></li>
+							    		<li><a href="#">Another action</a></li>
+							    		<li><a href="#">Something else here</a></li>
+							    		<li class="divider"></li>
+							    		<li><a href="#">Separated link</a></li>
+							  		</ul>
+								</div></td>
+							</tr>
+                            	<td>Jone Doe</td>
+								<td>Vendor</td>
+								<td><div class="btn-group btn-group-xs">
+							  		<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+							    		Action <span class="caret"></span>
+							  		</button>
+							  		<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							    		<li><a href="#">Action</a></li>
+							    		<li><a href="#">Another action</a></li>
+							    		<li><a href="#">Something else here</a></li>
+							    		<li class="divider"></li>
+							    		<li><a href="#">Separated link</a></li>
+							  		</ul>
+								</div></td>
+							</tr>
+                            	<td>Jone Doe</td>
+								<td>Vendor</td>
+								<td><div class="btn-group btn-group-xs">
+							  		<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+							    		Action <span class="caret"></span>
+							  		</button>
+							  		<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							    		<li><a href="#">Action</a></li>
+							    		<li><a href="#">Another action</a></li>
+							    		<li><a href="#">Something else here</a></li>
+							    		<li class="divider"></li>
+							    		<li><a href="#">Separated link</a></li>
+							  		</ul>
+								</div></td>
+							</tr>
+                            	<td>Jone Doe</td>
+								<td>Vendor</td>
+								<td><div class="btn-group btn-group-xs">
+							  		<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+							    		Action <span class="caret"></span>
+							  		</button>
+							  		<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							    		<li><a href="#">Action</a></li>
+							    		<li><a href="#">Another action</a></li>
+							    		<li><a href="#">Something else here</a></li>
+							    		<li class="divider"></li>
+							    		<li><a href="#">Separated link</a></li>
+							  		</ul>
+								</div></td>
+							</tr>
+                            	<td>Jone Doe</td>
+								<td>Vendor</td>
+								<td><div class="btn-group btn-group-xs">
+							  		<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+							    		Action <span class="caret"></span>
+							  		</button>
+							  		<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							    		<li><a href="#">Action</a></li>
+							    		<li><a href="#">Another action</a></li>
+							    		<li><a href="#">Something else here</a></li>
+							    		<li class="divider"></li>
+							    		<li><a href="#">Separated link</a></li>
+							  		</ul>
+								</div></td>
+							</tr>
+
+						</tbody>
+					</table>
+				</div><!-- ./padding-md -->
+			</div><!-- /main-container -->
+		</div><!-- /wrapper -->
+        
+        
+        <!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body">
+        <form role="form">
+			    			<div class="row">
+			    				<div class="col-xs-6 col-sm-6 col-md-6">
+			    					<div class="form-group">
+                                    <label>First Name</label>
+			               			 <input type="text" class="form-control " placeholder="First Name">
+			    					</div>
+			    				</div>
+			    				<div class="col-xs-6 col-sm-6 col-md-6">
+			    					<div class="form-group">
+                                    	<label>Last Name</label>
+			    						<input type="text" class="form-control " placeholder="Last Name">
+			    					</div>
+			    				</div>
+			    			</div>
+                            
+                            <div class="row">
+			    				<div class="col-xs-6 col-sm-6 col-md-6">
+			    					<div class="form-group">
+                                    <label>Account Name</label>
+			                		<input type="text" class="form-control " placeholder="Account Name">
+			    					</div>
+			    				</div>
+			    				<div class="col-xs-6 col-sm-6 col-md-6">
+			    					<div class="form-group">
+                                     	<label>Email Address</label>
+			    						<input type="email" class="form-control" placeholder="Email Address">
+			    					</div>
+			    				</div>
+			    			</div>
+
+			    			<div class="form-group">
+                            	<label>Select Role</label>
+			    				<select class="form-control">
+                                	<option>---Select Role---</option>
+                                </select>
+			    			</div>
+
+			    		
+			    		</form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+		<a href="#" class="scroll-to-top hidden-print"><i class="fa fa-chevron-up fa-lg"></i></a>
+
+		<!-- Jquery -->
+		<script src="js/jquery.js"></script>
+		
+		<!-- Bootstrap -->
+	    <script src="js/bootstrap.min.js"></script>
+		
+		<!-- Slimscroll -->
+		<script src='js/jquery.slimscroll.min.js'></script>
+		
+		<!-- admin -->
+		<script src="js/admin.js"></script>
+
+  	</body>
+</html>
